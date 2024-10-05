@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
+    height: 100vh; /* Makes the body take full height of the viewport */
+    margin: 0; /* Removes default margin */
+    background-color: rgb(234, 255, 246); /* Background color */
+}
+
+img {
+    max-width: 30%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: -100px; /* Adds space below the image */
+}
+
+button {
+    background-color: rgb(52, 52, 52);
+    color: rgb(235, 240, 238);
+    border: none; /* Removes the button border */
+    padding: 10px 20px; /* Adds padding to the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Sets the font size */
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6dfda2; /* Optional: Changes color on hover */
+    color: rgb(52, 52, 52);
+}
