@@ -1,30 +1,62 @@
-body {
+@font-face{
+    
+}
+
+html, body {
     display: flex;
     flex-direction: column; /* Stacks elements vertically */
-    justify-content: center; /* Vertically centers the content */
+    justify-content: flex-start; /* Vertically centers the content */
     align-items: center; /* Horizontally centers the content */
     height: 100vh; /* Makes the body take full height of the viewport */
-    margin: 0; /* Removes default margin */
-    background-color: rgb(234, 255, 246); /* Background color */
+    margin-top: 0%; /* Removes default margin */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 img {
-    max-width: 30%; /* Ensures the image is responsive */
+    max-width: 10%; /* Ensures the image is responsive */
     height: auto; /* Maintains aspect ratio */
-    margin-bottom: -100px; /* Adds space below the image */
+    margin-bottom: 20px; /* Adds space below the image */
+    padding: 50px 40px; /* Adds padding to the button */
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: rgb(234, 255, 246); /* Background color */
+    transform: scale(1.1);
+
 }
 
 button {
     background-color: rgb(52, 52, 52);
     color: rgb(235, 240, 238);
-    border: none; /* Removes the button border */
+    border: 2px solid white; 
     padding: 10px 20px; /* Adds padding to the button */
     cursor: pointer; /* Changes cursor to pointer on hover */
-    font-size: 16px; /* Sets the font size */
+    font-size: 18px; /* Sets the font size */
     border-radius: 5px;
 }
 
 button:hover {
     background-color: #6dfda2; /* Optional: Changes color on hover */
     color: rgb(52, 52, 52);
+}
+
+h1 {
+    font-family: ;
+    font-size: 55px; /* Sets the font size */
+    -webkit-text-stroke: 5px white; /* Stroke thickness and color */
+    color: black;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    video{
+        width: 100%;
+        height: auto;
+    }
 }
