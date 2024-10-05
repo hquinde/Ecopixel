@@ -2,7 +2,4 @@
 
 https://replit.com/join/aibroeollm-bbalidem
 
-
-
-
-https://prod.liveshare.vsengsaas.visualstudio.com/join?01FBE80EF29E08E05BB4B8E5EFA1A51ADAF2
+https://prod.liveshare.vsengsaas.visualstudio.com/join?C12EE16DF916EDBBA74F5DA7724BFF254E48
