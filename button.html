@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css"> <!-- Correct link to your CSS file -->
+</head>
+<body>
+
+<h1>EcoPixel</h1>
+
+<video autoplay loop muted src="EcoPixelBackground.mp4" ></video>
+
+<img src="uploadimg.png" alt="Upload" id="upload-image" style="cursor: pointer;">
+<input type="file" id="input-file" accept="image/jpeg, image/jpg, image/png" style="display: none;">
+
+<script>
+  // JavaScript to trigger file input when the image is clicked
+  document.getElementById("upload-image").addEventListener("click", function() {
+    document.getElementById("input-file").click();
+  });
+</script>
+
+
+  <a href="#" onclick="identifyGarbage()">
+      <button>Identify Garbage</button>
+  </a>
+
+  <script>
+    function identifyGarbage() {
+      // Your code to run the garbage identification function goes here
+      alert("Garbage identification function is running!");
+    }
+  </script>
+
+</body>
+</html>
