@@ -1,9 +1,10 @@
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 import numpy as np
+from pathlib import Path
 
-# Path to image
-imageLocation = "/Users/huntermimaroglu/Documents/Syracuse University/Clubs/CuseHacks/CuseHacks-2024/Test-Code/test/O_144.jpg"
+# Getting the image path
+imageLocation = next(Path("./Model-Files/").glob("WASTEIMAGE.*"), None)
 
 # Load the model
 model = load_model('/Users/huntermimaroglu/Documents/Syracuse University/Clubs/CuseHacks/CuseHacks-2024/Test-Code/model-v4.h5')
